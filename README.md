@@ -24,8 +24,8 @@ Vagrant guest.
 - find the section `vars:`
 
 **For repositories to place on *web* folder**:
-the repository is downloaded into the
-`/vagrant/web` folder on the Vagrant guest.
+Replace the github URL with the URL of your project after `gitDockerRepo`.
+the repository is downloaded into the `/vagrant/web` folder on the Vagrant guest.
 
 **For repositories to load your *Docker* container**:
 Replace the github URL with the URL of your project after `gitWebRepo`.
