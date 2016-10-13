@@ -31,8 +31,7 @@ the repository is downloaded into the `/vagrant/web` folder on the Vagrant guest
 Replace the github URL with the URL of your project after `gitWebRepo`.
 The repository will be cloned into the `/vagrant/docker` folder on the Vagrant guest. The docker-container is then started using the `docker-compose.yml` file in the folder.
 
-(*note: this does require a docker-compose folder to exist and to be in the root
-directory of the repository*)
+(*Note: this does require a docker-compose folder to exist and to be in the root directory of the repository and you do obviously need to have Ansible installed on your host machine.*)
 
 
 
