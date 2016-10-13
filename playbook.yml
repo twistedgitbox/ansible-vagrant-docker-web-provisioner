@@ -1,0 +1,21 @@
+---
+- hosts: all
+
+  sudo: true
+  vars:
+    document_root: /vagrant
+    document_web: /vagrant/web
+    document_docker: /vagrant/docker
+
+    gitWebRepo: https://github.com/puppetlabs/exercise-webpage.git
+
+    gitDockerRepo: https://github.com/twistedgitbox/simple_nginx.git
+
+  pre_tasks:
+    - name: update apt cache
+      apt: update_cache=yes
+
+  roles:
+    - guest
+    - webserver
+    - docker

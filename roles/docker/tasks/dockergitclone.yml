@@ -1,0 +1,9 @@
+---
+- name: Remove old docker repo folder
+  shell: rm -rf /vagrant/docker
+
+- name: Clone docker repo to docker directory
+  shell: git clone {{ gitDockerRepo }} {{ document_docker }}
+  sudo: false
+  args:
+    #creates: /vagrant/docker

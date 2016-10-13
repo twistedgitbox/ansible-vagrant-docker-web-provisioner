@@ -1,0 +1,9 @@
+---
+- name: Remove old repo folder
+  shell: rm -rf /vagrant/web
+
+- name: Clone web repo to web directory
+  shell: git clone {{ gitWebRepo }} {{ document_web }}
+  sudo: false
+  args:
+    #creates: /vagrant/web

@@ -1,0 +1,11 @@
+---
+# This playbook installs development resources
+
+- name: development | Install development resources
+  action: apt pkg={{ item }} state=installed
+  tags: development
+  with_items:
+    - vim
+    - ruby
+    - rubygems-integration
+    - curl
